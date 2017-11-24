@@ -1,6 +1,6 @@
 function bubbleSort(list) {
     var n = list.length - 1;
-    var notSorted = false;
+    var notSorted;
     do {
         notSorted = false;
         for (var i = 0; i < n; i++) {
