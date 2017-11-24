@@ -4,7 +4,7 @@ function selectionSort(list) {
     var min;
     while (index < n) {
         min = list[index];
-        for (var i = index; i < n; i++) {
+        for (var i = index + 1; i < n; i++) {
             if (list[i] <= min) {
                 min = list[i];
                 list[i] = list[index];
