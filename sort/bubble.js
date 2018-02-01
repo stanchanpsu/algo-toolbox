@@ -4,10 +4,10 @@ function bubbleSort(list) {
     do {
         notSorted = false;
         for (var i = 0; i < n; i++) {
-            if (list[i] > list[i+1]) {
+            if (list[i] > list[i + 1]) {
                 let temp = list[i];
-                list[i] = list[i+1];
-                list[i+1] = temp;
+                list[i] = list[i + 1];
+                list[i + 1] = temp;
                 notSorted = true;
             }
         }

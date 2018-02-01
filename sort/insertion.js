@@ -4,10 +4,10 @@ function insertionSort(list) {
         var item = list[i];
         var j = i - 1;
         while (item < list[j] && j >= 0) {
-            list[j+1] = list[j];
+            list[j + 1] = list[j];
             j--;
         }
-        list[j+1] = item;
+        list[j + 1] = item;
     }
     return list;
 }
