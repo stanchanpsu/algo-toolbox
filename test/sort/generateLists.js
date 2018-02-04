@@ -1,8 +1,8 @@
 var fs = require('fs');
 
 const START = 0;
-const END = 50;
-const LENGTH = 20;
+const END = 500;
+const LENGTH = 200;
 const LIST_FILE_NAME = 'ints.json'
 
 function generateUnsortedInts(start, end, n) {

@@ -10,7 +10,6 @@ var ints = require('./ints.json');
 const PASSED = 'PASSED';
 const FAILED = 'FAILED';
 
-
 function testSort(name, algorithm) {
     var sorted = algorithm(ints.unsortedInts).toString();
     var answer = ints.sortedInts.toString();
