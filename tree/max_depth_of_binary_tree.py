@@ -23,6 +23,7 @@ class Solution:
         else:
             count = count + 1
             return max(self.traverse(node.left, count), self.traverse(node.right, count))
+            
     def maxDepth(self, root):
         """
         :type root: TreeNode

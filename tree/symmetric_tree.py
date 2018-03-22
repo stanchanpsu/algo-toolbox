@@ -23,7 +23,9 @@ class Solution:
         
         # Recursively check the entire tree comparing the left's left children to the right's right children and the left's right children to the right's left children
         return self.matches(left.left, right.right) and self.matches(left.right, right.left)
+        
     def isSymmetric(self, root):
+
         """
         :type root: TreeNode
         :rtype: bool

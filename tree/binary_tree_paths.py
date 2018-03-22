@@ -28,6 +28,7 @@ class Solution:
         # Recursively check all children
         self.findPath(node.left, path)
         self.findPath(node.right, path)
+        
     def binaryTreePaths(self, root):
         """
         :type root: TreeNode
