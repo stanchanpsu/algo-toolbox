@@ -20,9 +20,8 @@ class Solution:
             return count
 
         # Else increment the count by 1 and return the check the children nodes for the maximum depth
-        else:
-            count = count + 1
-            return max(self.traverse(node.left, count), self.traverse(node.right, count))
+        count = count + 1
+        return max(self.traverse(node.left, count), self.traverse(node.right, count))
             
     def maxDepth(self, root):
         """

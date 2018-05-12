@@ -24,14 +24,7 @@ class Solution:
             return False
 
         # Recursively check all children nodes
-        left = self.isSameNode(p.left, q.left)
-        right = self.isSameNode(p.right, q.right)
-
-        # Both left and right have to always return True for the tree to be identical
-        if (not left or not right):
-            return False
-        else:
-            return True
+        return self.isSameNode(p.left, q.left) and self.isSameNode(p.right, q.right)
         
     def isSameTree(self, p, q):
         """
