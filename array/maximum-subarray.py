@@ -16,8 +16,10 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        maxsum = running = nums[0]
-        for i in range(1, len(nums)):
-            running = max(running + nums[i], nums[i])
-            maxsum = max(maxsum, running)
-        return maxsum
+        running = nums[0]
+        max_sum = nums[0]
+        
+        for num in nums[1:]:
+            running = running + num if running > 0 else num
+            max_sum = running if running > max_sum else max_sum
+        return max_sum
